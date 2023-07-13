@@ -1,0 +1,77 @@
+site_name: 3nets docs
+site_url: http://3nets.io
+site_description: 3nets Docs
+site_author: 3nets
+repo_name: 3nets/documentation
+repo_url: https://github.com/3nets/documentation
+edit_uri: https://github.com/3nets/documentation/blob/main
+
+# Copyright
+copyright: "Copyright &copy; 3nets"
+
+# Theme
+theme:
+  name: material
+  language: en
+  locale: en
+  font: false
+  palette:
+    primary: black
+    accent: blue
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil-circle
+    view: material/eye
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.indexes
+    - code.action.view
+    - navigation.footer
+
+# Extra
+extra:
+  # Font
+  font:
+    text: Roboto Slab
+    code: Source Code Pro
+  feature:
+    tabs: true
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/3nets
+
+extra_css:
+  - stylesheets/syntax.css
+  - stylesheets/fonts.css
+
+extra_javascript:
+  - javascripts/syntax.js
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+
+# Navigator
+nav:
+  - Welcome: "index.md"
+  - Installing 3nets | Manager: "3-nets-cloudmgr-install/3nets-cloudmgr-intro.md"
+
+# Extensions
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
